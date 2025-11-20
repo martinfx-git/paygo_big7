@@ -4,14 +4,12 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { useRouter } from "next/navigation"
 import { ArrowLeft } from "lucide-react"
-import Script from "next/script"
 
 export default function WatchPage() {
   const router = useRouter()
   const [userData, setUserData] = useState<any>(null)
 
   useEffect(() => {
-    // Check if user is logged in
     const storedUser = localStorage.getItem("paygo-user")
     if (!storedUser) {
       router.push("/login")
@@ -37,18 +35,16 @@ export default function WatchPage() {
       <div className="p-4">
         <h2 className="text-lg font-medium mb-3">How to Earn with PayGo</h2>
 
-        {/* Vimeo Video Player */}
-        <div className="mb-2">
-          <div style={{ padding: "222.22% 0 0 0", position: "relative" }}>
-            <iframe
-              src="https://youtu.be/Sg53BIrNVd0?si=It8E-qacfJ66F0P2"
-              frameBorder="0"
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
-              title="How to Earn with Paygo"
-            ></iframe>
-          </div>
-          <Script src="https://player.vimeo.com/api/player.js" strategy="lazyOnload" />
+        {/* YouTube Video Player */}
+        <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+          <iframe
+            src="https://www.youtube.com/embed/Sg53BIrNVd0"
+            title="How to Earn with PayGo"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; fullscreen"
+            allowFullScreen
+            className="absolute top-0 left-0 w-full h-full"
+          ></iframe>
         </div>
       </div>
     </div>
