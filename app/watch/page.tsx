@@ -41,7 +41,7 @@ export default function WatchPage() {
         <div className="mb-2">
           <div style={{ padding: "222.22% 0 0 0", position: "relative" }}>
             <iframe
-              src="https://player.vimeo.com/video/1068789479?h=054a5d43cc&badge=0&autopause=0&player_id=0&app_id=58479"
+              src="https://youtu.be/Sg53BIrNVd0?si=It8E-qacfJ66F0P2"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
               style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
