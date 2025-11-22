@@ -101,12 +101,12 @@ export default function PaymentPage() {
 
             <div>
               <p className="text-gray-700 mb-1">Bank Name</p>
-              <p className="font-bold">Nombank Microfinance Bank</p>
+              <p className="font-bold">Normbank Microfinance Bank</p>
             </div>
 
             <div>
               <p className="text-gray-700 mb-1">Account Name</p>
-              <p className="font-bold">Paygo-Aermeans/Richard</p>
+              <p className="font-bold">Aermeans/Richard</p>
             </div>
           </div>
 
