@@ -30,7 +30,7 @@ export default function PaymentPage() {
   }
 
   const handleCopyAccountNumber = () => {
-    navigator.clipboard.writeText("7069184249")
+    navigator.clipboard.writeText("1535694254")
     setCopiedAccount(true)
     setTimeout(() => setCopiedAccount(false), 2000)
   }
